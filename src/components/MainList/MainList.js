@@ -2,7 +2,6 @@ import { useSelector } from 'react-redux';
 
 export const MainList = () => {
   const posts = useSelector(state => state.posts.posts);
-  console.log(posts);
   return (
     <div>
       <h1>Posts</h1>
