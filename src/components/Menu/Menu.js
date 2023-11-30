@@ -12,6 +12,7 @@ export const Menu = () => {
     <nav>
       <StyledNavLink to="/">Main</StyledNavLink>
       <StyledNavLink to="/admin">Admin</StyledNavLink>
+      <StyledNavLink to="/login">Login</StyledNavLink>
     </nav>
   );
 };

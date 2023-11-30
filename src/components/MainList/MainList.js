@@ -1,7 +1,8 @@
 import { useSelector } from 'react-redux';
+import { selectPosts } from 'redux/selectors';
 
 export const MainList = () => {
-  const posts = useSelector(state => state.posts.posts);
+  const posts = useSelector(selectPosts);
   return (
     <div>
       <h1>Posts</h1>
