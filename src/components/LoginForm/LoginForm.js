@@ -15,9 +15,9 @@ export const LoginForm = () => {
     ) {
       dispatch(logIn());
       console.log('Logged in!');
-      return;
+    } else {
+      console.log('Incorrect login or password!');
     }
-    console.log('Incorrect login or password!');
     evt.target.reset();
   };
 
