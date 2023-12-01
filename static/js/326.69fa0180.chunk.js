@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkreact_homework_template=self.webpackChunkreact_homework_template||[]).push([[326],{326:function(e,t,n){n.r(t),n.d(t,{default:function(){return u}});var r=n(184);function u(){return(0,r.jsx)("div",{children:"This is Admin page"})}}}]);
+//# sourceMappingURL=326.69fa0180.chunk.js.map

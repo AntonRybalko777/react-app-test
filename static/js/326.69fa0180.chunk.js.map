@@ -1,0 +1,1 @@
+{"version":3,"file":"static/js/326.69fa0180.chunk.js","mappings":"gMAAe,SAASA,IACtB,OAAOC,EAAAA,EAAAA,KAAA,OAAAC,SAAK,sBACd,C","sources":["pages/admin.js"],"sourcesContent":["export default function Admin() {\n  return <div>This is Admin page</div>;\n}\n"],"names":["Admin","_jsx","children"],"sourceRoot":""}
