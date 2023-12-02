@@ -1,3 +1,7 @@
 export default function Admin() {
-  return <div>This is Admin page</div>;
+  return (
+    <div>
+      <h2 style={{ textAlign: 'center' }}>Admin page</h2>
+    </div>
+  );
 }

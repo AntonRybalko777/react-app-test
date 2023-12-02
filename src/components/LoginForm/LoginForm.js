@@ -1,6 +1,11 @@
 import { useSelector, useDispatch } from 'react-redux';
 import { selectLogin, selectPassword } from 'redux/selectors';
 import { logIn } from 'redux/authSlice';
+import { TextField, Button } from '@mui/material';
+import { StyledDiv } from './LoginForm.styled';
+import toast, { Toaster } from 'react-hot-toast';
+
+const notifyError = () => toast.error('Incorrect login or password.');
 
 export const LoginForm = () => {
   const dispatch = useDispatch();
@@ -14,25 +19,28 @@ export const LoginForm = () => {
       evt.target.elements.password.value === adminPassword
     ) {
       dispatch(logIn());
-      console.log('Logged in!');
     } else {
-      console.log('Incorrect login or password!');
+      notifyError();
     }
     evt.target.reset();
   };
 
   return (
     <form onSubmit={handleSubmit}>
-      <label>
-        Login
-        <input name="login" type="text" placeholder="Enter login" />
-      </label>
-      <label>
-        Password
-        <input name="password" type="password" placeholder="Enter password" />
-      </label>
-
-      <button type="submit">Sign up</button>
+      <StyledDiv>
+        <TextField name="login" label="Login" variant="outlined" required />
+        <TextField
+          type="password"
+          name="password"
+          label="Password"
+          variant="outlined"
+          required
+        />
+        <Button type="submit" variant="contained">
+          Log in
+        </Button>
+        <Toaster />
+      </StyledDiv>
     </form>
   );
 };
